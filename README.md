@@ -20,6 +20,6 @@ or STOMP and SockJS will get errors:
 (window as any).global = window
 
 # Back-End
-The back-end is a maven project using Spring Boot and STOMP websocket messaging based on the Spring example: <br/>
+The back-end is a maven project using Spring Boot and STOMP websocket messaging with SockJS support based on the Spring example: <br/>
 
 [Using WebSocket to build an interactive web application] (https://spring.io/guides/gs/messaging-stomp-websocket/#initial)
