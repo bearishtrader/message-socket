@@ -1,0 +1,60 @@
+.card {
+	width: 550px;
+	max-width: 95vw;
+	padding: 15px;
+	align-items: flex-start;
+	background: rgba(0, 0, 0, .3);
+	gap: 15px;
+	border-radius: 4px;
+	box-sizing: border-box;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.flexColumn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.mediumFont {
+	font-size: 18px;
+}
+
+.smallFont {
+	font-size: 15px;
+}
+
+p, pre, a, label {
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: Arial;
+	word-break: break-word;
+}
+
+button, input, textarea {
+	outline: none;
+	border: none;
+	padding: 10px;
+	box-sizing: border-box;
+	color: white;
+	background: rgba(0, 0, 0, .3);
+}
+
+button {
+	cursor: pointer;
+}
+
+body {
+	margin: 0;
+	animation: chill 10s ease-in-out infinite;
+}
+
+@keyframes chill {
+	from, to { background: #156eb8; }
+	
+	25%, 75% { background: #158eb8; }
+	
+	50% { background: #157eb8; }
+}

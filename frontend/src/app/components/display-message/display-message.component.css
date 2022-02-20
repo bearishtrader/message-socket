@@ -1,0 +1,8 @@
+.messageText {
+	white-space: pre-wrap;
+}
+
+.messageImage {
+	width: 100%;
+	position: relative;
+}

@@ -1,0 +1,10 @@
+<div class="card flexColumn">
+    <div class="inlineContainer">
+        <label class="smallFont">Author </label>
+        <input [(ngModel)] = "authorInput" id="author-input" placeholder = "Your handle/nickname"/>
+        <label class="smallFont"> Encryption </label>
+        <input [(ngModel)] = "encryptionPasswordInput" type="password" id="encryption-password" placeholder = "Encryption Password"/>
+    </div>
+</div>
+<app-compose-message [author]="authorInput" [encryptionPassword]="encryptionPasswordInput"></app-compose-message>
+<app-display-message *ngFor = "let message of dataServ.messages.reverse()" [message] = "message" [encryptionPassword]="encryptionPasswordInput"></app-display-message>

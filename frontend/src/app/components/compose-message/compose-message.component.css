@@ -1,0 +1,33 @@
+.composeMessageInput {
+	width: 100%;
+	height: 100px;
+	font-family: Arial;
+	box-sizing: border-box;
+	resize: none;
+}
+
+.composeMessagePreviewImage {
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+
+.previewImageContainer {
+	position: relative;
+}
+
+.previewImage {
+	height: 75px;
+}
+
+.composeMessageSubmitContainer {
+	width: 100%;
+	justify-content: space-between;
+	gap: 5px;
+}
+
+.composeMessageImageLabel {
+	background: rgba(0, 0, 0, .3);
+	padding: 10px;
+	cursor: pointer;
+}

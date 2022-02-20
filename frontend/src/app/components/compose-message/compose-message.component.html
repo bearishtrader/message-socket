@@ -1,0 +1,14 @@
+<div class = "card flexColumn">    
+    <textarea [(ngModel)] = "messageInput" class = "composeMessageInput mediumFont" placeholder = "Compose text message..."></textarea>
+    <div class = "composeMessagePreviewImage flex" *ngIf = "previewImageUrl != '' ">    
+        <img class = "previewImage" [src] = "previewImageUrl" />
+    </div>
+    <div class = "composeMessageSubmitContainer flex">
+        <label class = "composeMessageImageLabel smallFont">
+			Add Image        
+			<input type = "file" accept = "image/*" class = "messageImageInput" (input) = "uploadMessageImage ($event);" />
+        </label>
+        <label>  </label>
+        <button (click) = "composeMessage ();" class = "smallFont">Send Message</button>
+    </div>
+</div>

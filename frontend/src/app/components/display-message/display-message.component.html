@@ -1,0 +1,9 @@
+<div class = "card flexColumn">    
+    <pre class = "messageText flexColumn smallFont">From: {{authorD}} @{{todayDate | date:'medium'}}</pre>
+    <pre class = "messageText flexColumn mediumFont">{{ messageD }}</pre>
+    <div *ngIf = "message.base64ImageStr.length > 0" class = "messageImages">		
+		<div class = "postImagesContainer flex">
+			<img src = "{{base64Url}}" class = "messageImage" />
+		</div>
+	</div>
+</div>
