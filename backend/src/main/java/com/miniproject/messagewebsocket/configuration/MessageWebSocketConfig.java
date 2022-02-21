@@ -19,7 +19,8 @@ public class MessageWebSocketConfig implements WebSocketMessageBrokerConfigurer 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/message-socket")
-                .setAllowedOrigins("http://localhost:4200")
+                .setAllowedOrigins("http://localhost:4200", "http://34.221.46.159:4200", "http://localhost:80", "http://34.221.46.159:80",
+                        "http://localhost", "http://34.221.46.159")
                 .withSockJS();
     }
 

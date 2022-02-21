@@ -17,7 +17,7 @@ public class MessageController {
     @MessageMapping("/send/message")
     @SendTo("/subscription/message")
     public MessageBody getMessage(MessageBody message) throws Exception {
-        //Thread.sleep(1000); // simulated delay
+        //Thread.sleep(1000); // simulated delay, move this to the integration test (MessageControllerIT)
         return new MessageBody(HtmlUtils.htmlEscape(message.getAuthor()), HtmlUtils.htmlEscape(message.getMessage()),
                 message.getBase64ImageStr());
     }

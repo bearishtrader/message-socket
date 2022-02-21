@@ -86,6 +86,11 @@ class MessageControllerIT {
                     }
                 });
                 try {
+                    // Move this here from getMessage() we want the testing
+                    // code to have the lag so that it works not slow down the normal production code.
+                    // If you comment out this Thread.sleep(...) in MessageController::getMessage() it will cause this
+                    // integration test to fail so put the delay directly here instead.
+                    Thread.sleep(1000); // simulated delay
                     session.send("/app/send/message", testMessage);
                 } catch (Throwable t) {
                     failure.set(t);
