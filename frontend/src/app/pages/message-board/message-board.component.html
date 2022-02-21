@@ -7,4 +7,4 @@
     </div>
 </div>
 <app-compose-message [author]="authorInput" [encryptionPassword]="encryptionPasswordInput"></app-compose-message>
-<app-display-message *ngFor = "let message of dataServ.messages.reverse()" [message] = "message" [encryptionPassword]="encryptionPasswordInput"></app-display-message>
+<app-display-message *ngFor = "let message of dataServ.messages" [message] = "message" [encryptionPassword]="encryptionPasswordInput"></app-display-message>

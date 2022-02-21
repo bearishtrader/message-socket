@@ -26,7 +26,7 @@ export class SocketService {
               that.stompClient.subscribe("/subscription/message", 
                 (message: any) => { // Callback which is called whenever we get a message from the websocket
                   if (message.body) {
-                    that.dataServ.messages.push(<Message>JSON.parse(message.body));
+                    that.dataServ.messages.unshift(<Message>JSON.parse(message.body));
                     //console.log(message.body);
                   }
                 })
