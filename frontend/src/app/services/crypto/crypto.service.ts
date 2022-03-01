@@ -8,6 +8,7 @@ export class CryptoService {
 
   constructor() { }
 
+  // Great article on encryption: https://www.c-sharpcorner.com/article/aes-encryptiondecryption-with-angular-7/
   encrypt = ( inputString : string, password : string ) : string => {
     let encryptionPassword : string = password.trim();
     if ( encryptionPassword == "" ) return inputString.trim();

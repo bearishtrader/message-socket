@@ -16,6 +16,7 @@ export class SocketService {
   constructor(public dataServ:DataService, private route: ActivatedRoute, private router: Router) { }  
 
   // Helpful STOMP JS docs: https://stomp-js.github.io/stomp-websocket/codo/extra/docs-src/Usage.md.html#toc_4
+  // And here great article: https://medium.com/oril/spring-boot-websockets-angular-5-f2f4b1c14cee
   initConnection = () => {
         let webSocket = new SockJS(environment.socketBaseUrl+"message-socket");
         let that = this;
