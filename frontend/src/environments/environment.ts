@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  socketBaseUrl: "http://localhost:81/"
+  socketBaseUrl: "http://localhost:8081/"
 };
 
 /*
