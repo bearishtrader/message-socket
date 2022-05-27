@@ -81,6 +81,21 @@
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
                 <version>3.7.0.1746</version>
+                <executions>
+        			<execution>
+          				<phase>verify</phase>
+	          			<goals>
+	            			<goal>sonar</goal>
+	          			</goals>
+        			</execution>
+        			<execution>
+        				<id>sonar</id>
+          				<phase>sonar</phase>
+	          			<goals>
+	            			<goal>sonar</goal>
+	          			</goals>
+        			</execution>
+      			</executions>
             </plugin>
             <plugin>
                 <groupId>org.jacoco</groupId>
@@ -121,7 +136,7 @@
     <distributionManagement>
         <repository><id>artifactory</id>
             <name>miniproject_CI_Builds</name>
-            <url>http://localhost:8082/artifactory/miniproject.com_CI_Builds</url>
+            <url>http://localhost:8081/artifactory/miniproject.com_CI_Builds</url>
         </repository>
     </distributionManagement>
 </project>
