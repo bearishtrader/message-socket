@@ -13,12 +13,6 @@
     <artifactId>message-socket-backend</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-        <java.version>1.8</java.version>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -64,6 +58,14 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <release>11</release>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
@@ -74,6 +76,11 @@
                         </exclude>
                     </excludes>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.7.0.1746</version>
             </plugin>
             <plugin>
                 <groupId>org.jacoco</groupId>
@@ -111,4 +118,10 @@
         </plugins>
     </build>
 
+    <distributionManagement>
+        <repository><id>artifactory</id>
+            <name>miniproject_CI_Builds</name>
+            <url>http://localhost:8082/artifactory/miniproject.com_CI_Builds</url>
+        </repository>
+    </distributionManagement>
 </project>
