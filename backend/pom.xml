@@ -178,9 +178,15 @@
     </build>
 
     <distributionManagement>
-        <repository><id>artifactory</id>
-            <name>miniproject_CI_Builds</name>
+        <repository>
+            <id>central</id>
+            <name>JFrog Artifactory-releases</name>
             <url>http://localhost:8081/artifactory/miniproject.com_CI_Builds</url>
         </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>JFrog Artifactory-snapshots</name>
+            <url>http://localhost:8081/artifactory/miniproject.com_CI_Builds</url>
+        </snapshotRepository>
     </distributionManagement>
 </project>
