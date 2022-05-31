@@ -166,7 +166,7 @@
                                 <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
                             </publisher>
                             <buildInfo>
-                                <buildName>plugin-demo</buildName>
+                                <buildName>message-socket-backend</buildName>
                                 <buildNumber>${buildnumber}</buildNumber>
                                 <buildUrl>http://build-url.org</buildUrl>
                             </buildInfo>
