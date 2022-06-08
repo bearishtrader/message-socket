@@ -181,12 +181,12 @@
         <repository>
             <id>central</id>
             <name>JFrog Artifactory-releases</name>
-            <url>https://bearishtrader.jfrog.io:8081/artifactory/miniproject.com_CI_Builds</url>
+            <url>https://bearishtrader.jfrog.io/artifactory/miniproject.com_CI_Builds</url>
         </repository>
         <snapshotRepository>
             <id>snapshots</id>
             <name>JFrog Artifactory-snapshots</name>
-            <url>https://bearishtrader.jfrog.io:8081/artifactory/miniproject.com_CI_Builds</url>
+            <url>https://bearishtrader.jfrog.io/artifactory/miniproject.com_CI_Builds</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
